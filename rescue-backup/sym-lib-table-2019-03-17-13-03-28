@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name din_meter_atm90e26-rescue)(type Legacy)(uri ${KIPRJMOD}/din_meter_atm90e26-rescue.lib)(options "")(descr ""))
+  (lib (name ATM90E26_Featherwing1)(type Legacy)(uri ${KIPRJMOD}/ATM90E26_Featherwing.lib)(options "")(descr ""))
+  (lib (name whatnick)(type Legacy)(uri ${KIPRJMOD}/whatnick.lib)(options "")(descr ""))
+  (lib (name graphic_symbols)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/graphic_symbols.lib)(options "")(descr ""))
+)
