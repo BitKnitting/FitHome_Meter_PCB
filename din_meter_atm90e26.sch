@@ -1280,6 +1280,7 @@ F 0 "J1" V 8596 2428 50  0000 L CNN
 F 1 "PCIx1" V 8505 2428 50  0000 L CNN
 F 2 "Connectors:PCI-EXPRESS" H 8550 450 50  0001 C CNN
 F 3 "" H 8550 450 50  0001 C CNN
+F 4 "X" H 8550 1500 50  0001 C CNN "PN"
 	1    8550 1500
 	0    -1   -1   0   
 $EndComp
@@ -1299,6 +1300,7 @@ F 0 "TP_VP_0" V 8795 1224 50  0000 C CNN
 F 1 "VP_0" V 8704 1224 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 8800 1150 50  0001 C CNN
 F 3 "" H 8800 1150 50  0001 C CNN
+F 4 "X" H 8600 1150 50  0001 C CNN "PN"
 	1    8600 1150
 	0    -1   -1   0   
 $EndComp
@@ -1315,6 +1317,7 @@ F 0 "TP_VP_1" V 7795 1224 50  0000 C CNN
 F 1 "VP_1" V 7704 1224 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 7800 1150 50  0001 C CNN
 F 3 "" H 7800 1150 50  0001 C CNN
+F 4 "X" H 7600 1150 50  0001 C CNN "PN"
 	1    7600 1150
 	0    -1   -1   0   
 $EndComp
@@ -1331,6 +1334,7 @@ F 0 "TP_VN_0" H 3892 5777 50  0000 R CNN
 F 1 "VN_0" H 3892 5868 50  0000 R CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 4150 5750 50  0001 C CNN
 F 3 "" H 4150 5750 50  0001 C CNN
+F 4 "X" H 3950 5750 50  0001 C CNN "PN"
 	1    3950 5750
 	-1   0    0    1   
 $EndComp
@@ -1347,6 +1351,7 @@ F 0 "TP_VN_1" H 8342 5727 50  0000 R CNN
 F 1 "VN_1" H 8342 5818 50  0000 R CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 8600 5700 50  0001 C CNN
 F 3 "" H 8600 5700 50  0001 C CNN
+F 4 "X" H 8400 5700 50  0001 C CNN "PN"
 	1    8400 5700
 	-1   0    0    1   
 $EndComp
@@ -1363,6 +1368,7 @@ F 0 "TP_I1P_0" V 5295 1324 50  0000 C CNN
 F 1 "I1P_0" V 5204 1324 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 5300 1250 50  0001 C CNN
 F 3 "" H 5300 1250 50  0001 C CNN
+F 4 "X" H 5100 1250 50  0001 C CNN "PN"
 	1    5100 1250
 	0    -1   -1   0   
 $EndComp
@@ -1379,6 +1385,7 @@ F 0 "TP_I1N_0" V 5945 1274 50  0000 C CNN
 F 1 "I1N_0" V 5854 1274 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 5950 1200 50  0001 C CNN
 F 3 "" H 5950 1200 50  0001 C CNN
+F 4 "X" H 5750 1200 50  0001 C CNN "PN"
 	1    5750 1200
 	0    -1   -1   0   
 $EndComp
@@ -1395,6 +1402,7 @@ F 0 "TP_I1P_1" V 6445 1324 50  0000 C CNN
 F 1 "I1P_1" V 6354 1324 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 6450 1250 50  0001 C CNN
 F 3 "" H 6450 1250 50  0001 C CNN
+F 4 "X" H 6250 1250 50  0001 C CNN "PN"
 	1    6250 1250
 	0    -1   -1   0   
 $EndComp
@@ -1406,6 +1414,7 @@ F 0 "TP_I1N_1" V 6995 1324 50  0000 C CNN
 F 1 "I1N_1" V 6904 1324 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 7000 1250 50  0001 C CNN
 F 3 "" H 7000 1250 50  0001 C CNN
+F 4 "X" H 6800 1250 50  0001 C CNN "PN"
 	1    6800 1250
 	0    -1   -1   0   
 $EndComp
@@ -1427,6 +1436,7 @@ F 0 "J2" V 10216 1962 50  0000 R CNN
 F 1 "Conn_01x05" V 10125 1962 50  0000 R CNN
 F 2 "FitHome_conn:conn_5_2.54mm" H 10250 2250 50  0001 C CNN
 F 3 "~" H 10250 2250 50  0001 C CNN
+F 4 "X" H 10250 2250 50  0001 C CNN "PN"
 	1    10250 2250
 	0    -1   -1   0   
 $EndComp

@@ -561,7 +561,7 @@ Text GLabel 2550 1150 1    60   Output ~ 0
 VN_0
 Text GLabel 3150 1150 1    60   Output ~ 0
 VN_1
-Text Notes 9850 2600 0    60   ~ 0
+Text Notes 9700 2050 0    60   ~ 0
 Metering to CPU connector
 Text Notes 7650 2850 0    60   ~ 0
 Metering to Power/Sampler connector
@@ -860,11 +860,7 @@ Wire Wire Line
 Connection ~ 6600 4800
 Connection ~ 2150 4800
 Wire Notes Line
-	9500 550  9500 6650
-Wire Notes Line
 	2400 2700 2400 450 
-Wire Notes Line
-	450  2700 11250 2700
 Wire Wire Line
 	2350 4800 2350 4750
 Connection ~ 2050 3950
@@ -1303,6 +1299,7 @@ F 0 "TP_VP_0" V 8795 1224 50  0000 C CNN
 F 1 "VP_0" V 8704 1224 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 8800 1150 50  0001 C CNN
 F 3 "" H 8800 1150 50  0001 C CNN
+F 4 "X" H 8600 1150 50  0001 C CNN "PN"
 	1    8600 1150
 	0    -1   -1   0   
 $EndComp
@@ -1319,6 +1316,7 @@ F 0 "TP_VP_1" V 7795 1224 50  0000 C CNN
 F 1 "VP_1" V 7704 1224 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 7800 1150 50  0001 C CNN
 F 3 "" H 7800 1150 50  0001 C CNN
+F 4 "X" H 7600 1150 50  0001 C CNN "PN"
 	1    7600 1150
 	0    -1   -1   0   
 $EndComp
@@ -1367,6 +1365,7 @@ F 0 "TP_I1P_0" V 5295 1324 50  0000 C CNN
 F 1 "I1P_0" V 5204 1324 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 5300 1250 50  0001 C CNN
 F 3 "" H 5300 1250 50  0001 C CNN
+F 4 "X" H 5100 1250 50  0001 C CNN "PN"
 	1    5100 1250
 	0    -1   -1   0   
 $EndComp
@@ -1399,6 +1398,7 @@ F 0 "TP_I1P_1" V 6445 1324 50  0000 C CNN
 F 1 "I1P_1" V 6354 1324 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 6450 1250 50  0001 C CNN
 F 3 "" H 6450 1250 50  0001 C CNN
+F 4 "X" H 6250 1250 50  0001 C CNN "PN"
 	1    6250 1250
 	0    -1   -1   0   
 $EndComp
@@ -1410,6 +1410,7 @@ F 0 "TP_I1N_1" V 6995 1324 50  0000 C CNN
 F 1 "I1N_1" V 6904 1324 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 7000 1250 50  0001 C CNN
 F 3 "" H 7000 1250 50  0001 C CNN
+F 4 "X" H 6800 1250 50  0001 C CNN "PN"
 	1    6800 1250
 	0    -1   -1   0   
 $EndComp
@@ -1423,4 +1424,43 @@ Wire Wire Line
 Connection ~ 6350 1250
 Wire Wire Line
 	6350 1250 6350 1300
+$Comp
+L conn:Conn_01x05 J2
+U 1 1 5CA11376
+P 10250 2250
+F 0 "J2" V 10216 1962 50  0000 R CNN
+F 1 "Conn_01x05" V 10125 1962 50  0000 R CNN
+F 2 "FitHome_conn:conn_5_2.54mm" H 10250 2250 50  0001 C CNN
+F 3 "~" H 10250 2250 50  0001 C CNN
+	1    10250 2250
+	0    -1   -1   0   
+$EndComp
+Text Notes 9950 3000 0    50   ~ 0
+SPI debug header
+Wire Notes Line
+	11200 2100 9500 2100
+Wire Notes Line
+	9500 550  9500 6650
+Text GLabel 10050 2500 3    60   Output ~ 0
+CS_1
+Text GLabel 10150 2500 3    60   Output ~ 0
+MOSI_M
+Text GLabel 10250 2500 3    60   Input ~ 0
+MISO_M
+Text GLabel 10350 2500 3    60   Output ~ 0
+SCLK_M
+Text GLabel 10450 2500 3    60   Output ~ 0
+CS_0
+Wire Wire Line
+	10050 2500 10050 2450
+Wire Wire Line
+	10150 2450 10150 2500
+Wire Wire Line
+	10250 2450 10250 2500
+Wire Wire Line
+	10350 2500 10350 2450
+Wire Wire Line
+	10450 2500 10450 2450
+Wire Notes Line
+	9500 3150 11200 3150
 $EndSCHEMATC

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/mj/FitHome/repos/Tishams_PCBs/din_meter_atm90e26/din_meter_atm90e26.sch)
-    (date "Saturday, March 23, 2019 at 10:47:12 AM")
+    (date "Monday, March 25, 2019 at 10:26:40 AM")
     (tool "Eeschema (5.0.1-3-g963ef8bb5)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -314,12 +314,16 @@
     (comp (ref TP_VP_0)
       (value VP_0)
       (footprint MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small)
+      (fields
+        (field (name PN) X))
       (libsource (lib conn) (part TEST_1P) (description point))
       (sheetpath (names /) (tstamps /))
       (tstamp 5C98E37F))
     (comp (ref TP_VP_1)
       (value VP_1)
       (footprint MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small)
+      (fields
+        (field (name PN) X))
       (libsource (lib conn) (part TEST_1P) (description point))
       (sheetpath (names /) (tstamps /))
       (tstamp 5C999048))
@@ -338,6 +342,8 @@
     (comp (ref TP_I1P_0)
       (value I1P_0)
       (footprint MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small)
+      (fields
+        (field (name PN) X))
       (libsource (lib conn) (part TEST_1P) (description point))
       (sheetpath (names /) (tstamps /))
       (tstamp 5C9DFC1D))
@@ -350,12 +356,16 @@
     (comp (ref TP_I1P_1)
       (value I1P_1)
       (footprint MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small)
+      (fields
+        (field (name PN) X))
       (libsource (lib conn) (part TEST_1P) (description point))
       (sheetpath (names /) (tstamps /))
       (tstamp 5C9F742F))
     (comp (ref TP_I1N_1)
       (value I1N_1)
       (footprint MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small)
+      (fields
+        (field (name PN) X))
       (libsource (lib conn) (part TEST_1P) (description point))
       (sheetpath (names /) (tstamps /))
       (tstamp 5C9F749A))
