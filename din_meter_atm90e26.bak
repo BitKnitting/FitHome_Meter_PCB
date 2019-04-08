@@ -482,9 +482,9 @@ Text GLabel 10700 1500 3    60   BiDi ~ 0
 GND_M
 Text GLabel 10800 1500 3    60   BiDi ~ 0
 3V3_M
-Text GLabel 9900 1500 3    60   Input ~ 0
-3V3_CPU
 Text GLabel 10000 1500 3    60   Input ~ 0
+3V3_CPU
+Text GLabel 9900 1500 3    60   Input ~ 0
 GND_CPU
 Text GLabel 10500 1500 3    60   Output ~ 0
 MOSI_M
@@ -723,25 +723,25 @@ F 4 "X" H 10400 4400 50  0001 C CNN "PN"
 	1    10400 4400
 	1    0    0    -1  
 $EndComp
-Text GLabel 7700 1900 3    60   Output ~ 0
+Text GLabel 9100 950  2    60   Output ~ 0
 3V3_M
-Text GLabel 8800 1100 1    60   Output ~ 0
+Text GLabel 9100 1950 2    60   Output ~ 0
 VP_0
-Text GLabel 7700 1100 1    60   Output ~ 0
+Text GLabel 9100 1350 2    60   Output ~ 0
 VP_1
-Text GLabel 8400 1900 3    60   Output ~ 0
+Text GLabel 9100 1150 2    60   Output ~ 0
 GND_M
-Text GLabel 9300 1900 3    60   Output ~ 0
+Text GLabel 9100 2450 2    60   Output ~ 0
 3V3_CPU
-Text GLabel 9400 1900 3    60   Output ~ 0
+Text GLabel 9100 2350 2    60   Output ~ 0
 GND_CPU
-Text GLabel 9300 1100 1    60   Output ~ 0
+Text GLabel 7900 2450 0    60   Output ~ 0
 I1P_0_IN
-Text GLabel 9100 1100 1    60   Output ~ 0
+Text GLabel 7900 2350 0    60   Output ~ 0
 I1N_0_IN
-Text GLabel 8000 1100 1    60   Output ~ 0
+Text GLabel 7900 1550 0    60   Output ~ 0
 I1P_1_IN
-Text GLabel 7900 1100 1    60   Output ~ 0
+Text GLabel 7900 1150 0    60   Output ~ 0
 I1N_1_IN
 $Comp
 L din_meter_atm90e26-rescue:L_Core_Ferrite_Small L1
@@ -853,8 +853,6 @@ Wire Wire Line
 	10300 1300 10300 1500
 Wire Wire Line
 	10200 1300 10200 1500
-Wire Wire Line
-	10000 1300 10000 1500
 Wire Wire Line
 	9900 1300 9900 1500
 Connection ~ 6600 4800
@@ -1227,14 +1225,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 4650 7050 4650
 Wire Wire Line
-	7900 1100 7900 1250
-Wire Wire Line
-	8000 1100 8000 1250
-Wire Wire Line
-	9100 1100 9100 1250
-Wire Wire Line
-	9300 1100 9300 1250
-Wire Wire Line
 	1350 5050 1850 5050
 Wire Notes Line
 	12250 8800 -1200 8800
@@ -1268,63 +1258,30 @@ Wire Wire Line
 	2200 4350 2200 3950
 Wire Wire Line
 	2200 4350 2600 4350
-Wire Wire Line
-	8400 1750 8400 1900
-Wire Wire Line
-	7700 1750 7700 1900
-$Comp
-L din_meter_atm90e26-rescue:PCIx1 J1
-U 1 1 5C98D347
-P 8550 1500
-F 0 "J1" V 8596 2428 50  0000 L CNN
-F 1 "PCIx1" V 8505 2428 50  0000 L CNN
-F 2 "Connectors:PCI-EXPRESS" H 8550 450 50  0001 C CNN
-F 3 "" H 8550 450 50  0001 C CNN
-	1    8550 1500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7700 1250 7700 1150
-Wire Wire Line
-	9300 1900 9300 1750
-Wire Wire Line
-	9400 1900 9400 1750
-Wire Wire Line
-	8800 1100 8800 1150
 $Comp
 L conn:TEST_1P TP_VP_0
 U 1 1 5C98E37F
-P 8600 1150
-F 0 "TP_VP_0" V 8795 1224 50  0000 C CNN
-F 1 "VP_0" V 8704 1224 50  0000 C CNN
-F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 8800 1150 50  0001 C CNN
-F 3 "" H 8800 1150 50  0001 C CNN
-F 4 "X" H 8600 1150 50  0001 C CNN "PN"
-	1    8600 1150
-	0    -1   -1   0   
+P 9500 1850
+F 0 "TP_VP_0" V 9400 2000 50  0000 C CNN
+F 1 "VP_0" V 9604 1924 50  0001 C CNN
+F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 9700 1850 50  0001 C CNN
+F 3 "" H 9700 1850 50  0001 C CNN
+F 4 "X" H 9500 1850 50  0001 C CNN "PN"
+	1    9500 1850
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8600 1150 8800 1150
-Connection ~ 8800 1150
-Wire Wire Line
-	8800 1150 8800 1250
 $Comp
 L conn:TEST_1P TP_VP_1
 U 1 1 5C999048
-P 7600 1150
-F 0 "TP_VP_1" V 7795 1224 50  0000 C CNN
-F 1 "VP_1" V 7704 1224 50  0000 C CNN
-F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 7800 1150 50  0001 C CNN
-F 3 "" H 7800 1150 50  0001 C CNN
-F 4 "X" H 7600 1150 50  0001 C CNN "PN"
-	1    7600 1150
-	0    -1   -1   0   
+P 9550 1250
+F 0 "TP_VP_1" V 9450 1350 50  0000 C CNN
+F 1 "VP_1" V 9654 1324 50  0001 C CNN
+F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 9750 1250 50  0001 C CNN
+F 3 "" H 9750 1250 50  0001 C CNN
+F 4 "X" H 9550 1250 50  0001 C CNN "PN"
+	1    9550 1250
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7600 1150 7700 1150
-Connection ~ 7700 1150
-Wire Wire Line
-	7700 1150 7700 1100
 $Comp
 L conn:TEST_1P TP_VN_0
 U 1 1 5C9A4232
@@ -1333,6 +1290,7 @@ F 0 "TP_VN_0" H 3892 5777 50  0000 R CNN
 F 1 "VN_0" H 3892 5868 50  0000 R CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 4150 5750 50  0001 C CNN
 F 3 "" H 4150 5750 50  0001 C CNN
+F 4 "X" H 3950 5750 50  0001 C CNN "PN"
 	1    3950 5750
 	-1   0    0    1   
 $EndComp
@@ -1349,6 +1307,7 @@ F 0 "TP_VN_1" H 8342 5727 50  0000 R CNN
 F 1 "VN_1" H 8342 5818 50  0000 R CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 8600 5700 50  0001 C CNN
 F 3 "" H 8600 5700 50  0001 C CNN
+F 4 "X" H 8400 5700 50  0001 C CNN "PN"
 	1    8400 5700
 	-1   0    0    1   
 $EndComp
@@ -1382,6 +1341,7 @@ F 0 "TP_I1N_0" V 5945 1274 50  0000 C CNN
 F 1 "I1N_0" V 5854 1274 50  0000 C CNN
 F 2 "MeasurementPoints:Measurement_Point_Round-SMD-Pad_Small" H 5950 1200 50  0001 C CNN
 F 3 "" H 5950 1200 50  0001 C CNN
+F 4 "X" H 5750 1200 50  0001 C CNN "PN"
 	1    5750 1200
 	0    -1   -1   0   
 $EndComp
@@ -1432,15 +1392,16 @@ F 0 "J2" V 10216 1962 50  0000 R CNN
 F 1 "Conn_01x05" V 10125 1962 50  0000 R CNN
 F 2 "FitHome_conn:conn_5_2.54mm" H 10250 2250 50  0001 C CNN
 F 3 "~" H 10250 2250 50  0001 C CNN
+F 4 "X" H 10250 2250 50  0001 C CNN "PN"
 	1    10250 2250
 	0    -1   -1   0   
 $EndComp
 Text Notes 9950 3000 0    50   ~ 0
 SPI debug header
 Wire Notes Line
-	11200 2100 9500 2100
+	10700 250  9000 250 
 Wire Notes Line
-	9500 550  9500 6650
+	9850 -3400 9850 2700
 Text GLabel 10050 2500 3    60   Output ~ 0
 CS_1
 Text GLabel 10150 2500 3    60   Output ~ 0
@@ -1463,4 +1424,64 @@ Wire Wire Line
 	10450 2500 10450 2450
 Wire Notes Line
 	9500 3150 11200 3150
+$Comp
+L FitHome:PCI_Express J1
+U 1 1 5CA91AA9
+P 8350 2350
+F 0 "J1" H 8450 4075 50  0000 C CNN
+F 1 "PCI_Express" H 8450 3984 50  0000 C CNN
+F 2 "" H 8350 2350 50  0001 C CNN
+F 3 "" H 8350 2350 50  0001 C CNN
+	1    8350 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 950  9100 950 
+Wire Wire Line
+	9100 1150 8800 1150
+NoConn ~ 8800 850 
+NoConn ~ 8800 1050
+NoConn ~ 8800 1250
+Wire Wire Line
+	9100 1350 9000 1350
+Wire Wire Line
+	9550 1250 9000 1250
+Wire Wire Line
+	9000 1250 9000 1350
+Connection ~ 9000 1350
+Wire Wire Line
+	9000 1350 8800 1350
+Wire Wire Line
+	9100 1950 9000 1950
+Wire Wire Line
+	9500 1850 9000 1850
+Wire Wire Line
+	9000 1850 9000 1950
+Connection ~ 9000 1950
+Wire Wire Line
+	9000 1950 8800 1950
+Wire Wire Line
+	7900 2450 8100 2450
+Wire Wire Line
+	9100 2450 8800 2450
+NoConn ~ 8800 2550
+Wire Wire Line
+	10000 1300 10000 1500
+Wire Wire Line
+	9100 2350 8800 2350
+NoConn ~ 8800 1450
+NoConn ~ 8800 1550
+NoConn ~ 8800 1650
+NoConn ~ 8800 1750
+NoConn ~ 8800 1850
+NoConn ~ 8800 2050
+NoConn ~ 8800 2150
+NoConn ~ 8800 2250
+NoConn ~ 10100 1300
+Wire Wire Line
+	8100 2350 7900 2350
+Wire Wire Line
+	7900 1550 8100 1550
+Wire Wire Line
+	8100 1150 7900 1150
 $EndSCHEMATC
