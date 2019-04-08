@@ -1,7 +1,7 @@
 Kicad is used to create the schematic and layout.
 # Meter PCB
 The meter PCB takes in the voltage and current readings from the Power PCB and uses two atm90e26 energy monitor ICs to convert the readings that are readable by a microcontroller.  The readings are sent to the microcontroller over SPI. It is one of the three PCBs that make up the FitHome hardware.  The other two are the:  
-* [The Power PCB](https://github.com/BitKnitting/FitHome_Power_PCB) is used by [the FitHome project](https://hackaday.io/project/164721-fithome)It monitors the incoming voltage and current of a (North American's) home energy lines.  
+* [The Power PCB](https://github.com/BitKnitting/FitHome_Power_PCB)  monitors the incoming voltage and current of a (North American's) home energy lines.  
 * [The microcontroller PCB](https://github.com/BitKnitting/Tisham_PCB_Feather).  The microcontroller PCB mounts a microcontroller with wifi - like a Feather RFM95 or a wemos D1 (a bit up in the air as of this date - 4/5/2019).  The microcontroller gets the voltage and current readings from the atm90e26's over SPI and then sends them via mqtt.
 # Thanks to Those That Went Before
 This project extends [Tisham Dhar's work on building energy monitors using an atm90e26](https://github.com/whatnick/DIN_Rail_EnergyMonitor).  In particular, [the DIN Rail energy monitor](https://www.crowdsupply.com/whatnick/atm90e26-energy-monitor-kits).  Besides his open source projects, Tisham has been exceptionally helpful and supportive.  Tisham continues to inspire me.  THANK YOU.

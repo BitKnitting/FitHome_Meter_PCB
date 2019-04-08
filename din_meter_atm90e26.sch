@@ -1421,7 +1421,7 @@ Wire Wire Line
 Wire Notes Line
 	9500 3150 11200 3150
 $Comp
-L FitHome:PCI_Express J1
+L din_meter_atm90e26-rescue:PCI_Express-FitHome J1
 U 1 1 5CA91AA9
 P 8350 2350
 F 0 "J1" H 8450 4075 50  0000 C CNN

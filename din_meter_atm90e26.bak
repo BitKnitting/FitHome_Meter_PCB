@@ -1398,10 +1398,6 @@ F 4 "X" H 10250 2250 50  0001 C CNN "PN"
 $EndComp
 Text Notes 9950 3000 0    50   ~ 0
 SPI debug header
-Wire Notes Line
-	10700 250  9000 250 
-Wire Notes Line
-	9850 -3400 9850 2700
 Text GLabel 10050 2500 3    60   Output ~ 0
 CS_1
 Text GLabel 10150 2500 3    60   Output ~ 0
@@ -1430,7 +1426,7 @@ U 1 1 5CA91AA9
 P 8350 2350
 F 0 "J1" H 8450 4075 50  0000 C CNN
 F 1 "PCI_Express" H 8450 3984 50  0000 C CNN
-F 2 "" H 8350 2350 50  0001 C CNN
+F 2 "FitHome_conn:PCI-EXPRESS" H 8350 2350 50  0001 C CNN
 F 3 "" H 8350 2350 50  0001 C CNN
 	1    8350 2350
 	1    0    0    -1  
@@ -1484,4 +1480,18 @@ Wire Wire Line
 	7900 1550 8100 1550
 Wire Wire Line
 	8100 1150 7900 1150
+NoConn ~ 8100 2550
+NoConn ~ 8100 2250
+NoConn ~ 8100 2150
+NoConn ~ 8100 2050
+NoConn ~ 8100 1950
+NoConn ~ 8100 1850
+NoConn ~ 8100 1750
+NoConn ~ 8100 1650
+NoConn ~ 8100 1450
+NoConn ~ 8100 1350
+NoConn ~ 8100 1250
+NoConn ~ 8100 1050
+NoConn ~ 8100 950 
+NoConn ~ 8100 850 
 $EndSCHEMATC
