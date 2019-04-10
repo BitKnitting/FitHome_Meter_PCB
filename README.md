@@ -25,6 +25,21 @@ MMD1/0: Metering Mode Configuration
 11: flexible mode (line specified by the LNSel bit (MMode, 2BH))
 ```
 We're only intested in L line mode (01). This is why pin 20 (MMD0) is set to GND and pin 1 (MMD1) is set to 3.3V.
+## The Oscillator
+As you probably know better than me, an oscillator is needed to generate clock signals to control the speed of the atm90e26's processor.  The datasheet notes using a crystal oscillator with a frequency of 8.192 MHz.  
+![Crystal oscillator](images/crystal_oscillator.png)
+### Why 20pF Caps
+The datasheet states: _An 8.192 MHz crystal is connected between OSCI and OSCO. In application,
+this pin should be connected to ground through a 12pF capacitor._  So why a 20pF cap if the datasheet states a 12p cap should be used.
+
+I am following the advice of Tisham: _The BOM for the DIN rail uses a different crystal and hence different load capacitance (20pF)...Crystals are affected by board parasitics as well. Please see [the Adafruit article](https://blog.adafruit.com/2012/01/24/choosing-the-right-crystal-and-caps-for-your-design/) about this. The values I picked are only via rule of thumb. Try and see._  
+
+The crystal being used is [PN AA-8.192MAGE-T](http://www.txccrystal.com/images/pdf/aa-automotive.pdf).  The datasheet states the Load Capacitance (CL) to be 8pF.  
+
+Going on the advice in the Adafruit article, a "best estimate" for the capacitors (C1 and C2) is C1, C2 = 2*CL – 2*Cstray  where Cstray is described as: _Unfortunately, every trace, every lead on your component, just about everything on your PCB has some stray capacitance.  The total of these values is represented by Cstray.  You can usually guestimate this in the neighbourhood of 2-5pF as long as you follow good layout practice and keep the trace from the crystal to the pins on the MCU as short as possible with no vias, etc._
+
+If we use Cstray = 3pF, 2*8 - 2*3 = 12pF - which is what is recommended in the datasheet. As of 4/10/2019 I am using 20pF based on Tisham's testing/recommendation.  If 20 doesn't work, I'll try 12pF and move up from there.  Challenges bring opportunities.
+
 
 
 
