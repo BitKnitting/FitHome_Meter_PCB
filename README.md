@@ -40,6 +40,41 @@ Going on the advice in the Adafruit article, a "best estimate" for the capacitor
 
 If we use Cstray = 3pF, 2*8 - 2*3 = 12pF - which is what is recommended in the datasheet. As of 4/10/2019 I am using 20pF based on Tisham's testing/recommendation.  If 20 doesn't work, I'll try 12pF and move up from there.  Challenges bring opportunities.
 
+### My Frankenstein Test
+I soldered an atm90e26 and the corresponding caps and resistors to get SPI working from the first meter PCB to an itsy bitsy.  I used Circuit Python and my Happyday_M90E26_SPI.py library to send SPI commands to the meter within the Mu editor.
+![](images/meter_SPI_Frankenstein.jpg)
+
+
+#### Results
+Sending request to read the System Status:
+```
+MOSI: 0x81;  MISO: 0xFF	
+```
+Value returned my atm90e26:  
+```
+MOSI: 0x00;  MISO: 0x00	
+MOSI: 0x00;  MISO: 0x02	
+```
+OOH!  Isn't that GREAT?  System status = 2.  It is what I expected based on results I have gotten in the past.
+
+Sending request to read the meter status:  
+```
+MOSI: 0xC6;  MISO: 0xFF	
+```
+Value returned: 
+```
+MOSI: 0x00;  MISO: 0xC8	
+MOSI: 0x00;  MISO: 0x02	
+```
+Meter status = 0xC802.  I expected 0xC801.  
+
+__TODO:__  
+The Meter Status (46H) register notes that bits 1 - 0 when fixed L line (which I thought I had  i.e.: MMD1 = 0, MMD0 = 1) should be 01.  But the reading of 2 indicates MMD1 = 1 and MMD0 = 0.  Which is L+N mode.  __AHA!  I have this backword on the schematic.  So the meter status reading is correct given the current meter setting.  Currently, MMD1 is connected to +3.3V and MMD0 is connected to GND.__  
+  
+_ARGH.  The datasheet in the pin description led me to believe the MMD0 and 1 settings were reverse.  Then the description of the 46H register has it the reverse!  Well isn't that special!_
+
+
+
 
 
 
