@@ -72,7 +72,14 @@ __TODO:__
 The Meter Status (46H) register notes that bits 1 - 0 when fixed L line (which I thought I had  i.e.: MMD1 = 0, MMD0 = 1) should be 01.  But the reading of 2 indicates MMD1 = 1 and MMD0 = 0.  Which is L+N mode.  __AHA!  I have this backword on the schematic.  So the meter status reading is correct given the current meter setting.  Currently, MMD1 is connected to +3.3V and MMD0 is connected to GND.__  
   
 _ARGH.  The datasheet in the pin description led me to believe the MMD0 and 1 settings were reverse.  Then the description of the 46H register has it the reverse!  Well isn't that special!_
-
+# Connectors
+There are two connectors:  
+* The male end of the PCI-E.  This is just a footprint on the PCB.  
+* The PCB - PCB right angle 10 pin connector that connects the meter PCB to the uPCB.
+## PCB - PCB connector
+The one used is: 
+* [52418-1010](https://www.mouser.com/datasheet/2/276/0524181010_PCB_RECEPTACLES-170490.pdf) molex Female side of connector.  These are around $1.22 each at [Digikey](https://www.digikey.com/product-detail/en/molex/52418-1010/WM6478-ND/481106) and $1.04 each at [Mouser](https://www.mouser.com/ProductDetail/538-52418-1010).  The Female is soldered onto the meter PCB.
+* [53290-1080](https://www.molex.com/pdm_docs/sd/532901080_sd.pdf) male is $.82/each at [Digikey](https://www.digikey.com/product-detail/en/molex/53290-1080/WM24313-ND/917592) and $.90 each at[Mouser](https://www.mouser.com/ProductDetail/Molex/53290-1080?qs=%2Fha2pyFaduiHJk6fZnMcvUZuJ6ieM0yPA3e7l1ZVdEg%3D). The Male is soldered onto the uPCB.
 
 
 
